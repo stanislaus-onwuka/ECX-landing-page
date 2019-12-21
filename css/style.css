@@ -1,0 +1,91 @@
+/* PRE DEFINED CLASSES AND ELEMENT STYLES */
+@import url(http://fonts.googleapis.com/css?family=Segoe+Ui:300italic,400italic,700italic,300,400,700);
+
+*,html,body{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Segoe Ui',sans-serif;
+}
+section{
+  width: 100%;
+}
+.container{
+  width: 90%;
+  margin: 10px auto;
+}
+.flex-container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.title{
+  font-size: 1.7em;
+  font-weight: normal;
+  line-height: 0.9em;
+  margin: 0.5em 0 0.5em 0;
+}
+.all-0{
+  margin: 0px;
+  padding: 0px;
+}
+/* NAVIGATION */
+ul.nav-list{
+  list-style-type: none;
+}
+.navlink a{
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  color: #707070;
+  opacity:1;
+  text-align: center;
+}
+
+/* HERO SECTION */
+.hero{
+  width: 100%;
+}
+
+.hero button{
+  background: linear-gradient(270deg,#C1F4FC,#4435CF);
+  border: none;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hero button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* LOGOs AREA */
+.logo{
+  background: rgba(248, 248, 248, 1);
+}
+.logo-div{
+  margin-bottom: 0px;
+}
+.logo-div img{
+  margin: 5px;
+  width: 4em;
+  height: 4em;
+}
+
+
+/* ABOUT SECTION */
+section#about{
+  background: linear-gradient(258deg,rgba(221, 221, 221, 0.5),rgba(68, 53, 207, 0.5));
+  box-sizing: border-box !important;
+  padding-top: 10px;
+}
+.about{
+  margin-bottom: 0px;
+}
+.about-writeup *{
+  color: #fff;
+}
+.about-writeup p{
+  font-size: 0.9em;
+  line-height: 1em;
+}
