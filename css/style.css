@@ -314,6 +314,14 @@ section#about{
 .read-more{
   margin-right: 10px;
 }
+@media only screen and (max-width: 600px){
+
+  .card , 
+  .about-writeup{
+    width: 350px !important;
+  }
+
+}
 
 @media only screen and (min-width: 600px){
   /* For the Mobile Navigation */
@@ -351,6 +359,8 @@ section#about{
   .hero-img{
     display: block;
   }
+
+  
   
   
 } 
