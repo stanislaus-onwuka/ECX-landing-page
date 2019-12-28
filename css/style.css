@@ -14,10 +14,19 @@ section{
   width: 90%;
   margin: 10px auto;
 }
+.container1{
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+    
 .flex-container{
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
+  flex-flow: column wrap;
 }
 .title{
   font-size: 1.7em;
@@ -25,9 +34,10 @@ section{
   line-height: 0.9em;
   margin: 0.5em 0 0.5em 0;
 }
-.all-0{
+.all-0 > h3{
   margin: 0px;
   padding: 0px;
+  float: right;
 }
 /* NAVIGATION */
 ul.nav-list{
@@ -42,9 +52,175 @@ ul.nav-list{
   text-align: center;
 }
 
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: linear-gradient(258deg,rgba(221, 221, 221, 0.5),rgba(68, 53, 207, 0.5));
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #F31C66;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width:300px;
+  height: 100vh;
+  margin: -100px 0 0 -61px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.desktop-nav{
+  display: none;
+  width: 600px;
+  float: right;
+}
+.nav-list1{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-list1 > li {
+  list-style-type: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-list1> li:hover{
+
+  border-bottom: 4px solid #F31C66;
+
+}
+
+.active{
+  border-bottom: 4px solid #F31C66;
+}
+
 /* HERO SECTION */
 .hero{
   width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .hero button{
@@ -53,6 +229,7 @@ ul.nav-list{
   width: 30%;
   padding: 10px;
   border-radius: 5px;
+  margin-top: 15px;
 }
 .hero button a{
   text-decoration: none;
@@ -61,15 +238,16 @@ ul.nav-list{
 
 /* LOGOs AREA */
 .logo{
-  background: rgba(248, 248, 248, 1);
+  background: #4435CF;
 }
 .logo-div{
   margin-bottom: 0px;
 }
-.logo-div img{
+.logo-div i{
   margin: 5px;
-  width: 4em;
-  height: 4em;
+  font-size: 40px;
+  color: #fff;
+  padding: 10px;
 }
 
 
@@ -89,3 +267,34 @@ section#about{
   font-size: 0.9em;
   line-height: 1em;
 }
+
+
+@media only screen and (min-width: 600px){
+  /* body{
+    background-color: #000;
+  } */
+  .mobile-nav{
+    display: none;
+  }
+  .desktop-nav{
+    display: block;
+  }
+
+  .flex-container{
+      display: flex;
+      justify-content: flex-end !important;
+      flex-flow: inherit;
+  }
+  .container1{
+      width: 90%;
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row;
+  }
+  .hero{
+    width: 50%;
+  }
+
+} 
