@@ -16,7 +16,7 @@ section{
 }
 .container1{
   width: 90%;
-  margin: 10px auto;
+  margin: -10px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -154,8 +154,8 @@ ul.nav-list{
 {
   position: absolute;
   width:300px;
-  height: 100vh;
-  margin: -100px 0 0 -61px;
+  height: 90vh;
+  margin: -100px 0 0 -40px;
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
@@ -215,12 +215,16 @@ ul.nav-list{
 
 /* HERO SECTION */
 .hero{
-  width: 100%;
-    height: 60vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    background-image: url("/images/hero-img.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: cadetblue;
 }
 
 .hero button{
@@ -234,6 +238,9 @@ ul.nav-list{
 .hero button a{
   text-decoration: none;
   color: #fff;
+}
+.hero-img{
+  display: none;
 }
 
 /* LOGOs AREA */
@@ -260,6 +267,13 @@ section#about{
 .about{
   margin-bottom: 0px;
 }
+.about-cards{
+  display: flex;
+}
+.about-writeup{
+    width: 500px;
+    margin-bottom: 50px;
+}
 .about-writeup *{
   color: #fff;
 }
@@ -268,11 +282,41 @@ section#about{
   line-height: 1em;
 }
 
+.card{
+  color: #fff;
+  width: 270px;
+  margin-right: 
+  20px;
+}
+
+.card > h3{
+    
+    font-size: 1.7em;
+    font-weight: normal;
+    line-height: 0.9em;
+    margin: 0.5em 0 0.5em 0;
+  
+}
+
+.card > p{
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+.card > img{
+  border-radius: 10px;
+}
+
+.read-more-container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.read-more{
+  margin-right: 10px;
+}
 
 @media only screen and (min-width: 600px){
-  /* body{
-    background-color: #000;
-  } */
+  /* For the Mobile Navigation */
   .mobile-nav{
     display: none;
   }
@@ -280,6 +324,7 @@ section#about{
     display: block;
   }
 
+  /* Global styles Readjustment */
   .flex-container{
       display: flex;
       justify-content: flex-end !important;
@@ -287,15 +332,35 @@ section#about{
   }
   .container1{
       width: 90%;
-      margin: 10px auto;
+      margin: -10px auto;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-flow: row;
   }
+  .sub-container{
+    display: flex;
+  }
+
+  /* Landing Page */
   .hero{
     width: 50%;
     height: 76vh;
+    background-image: none;
   }
-
+  .hero-img{
+    display: block;
+  }
+  
+  
 } 
+
+@media only screen and (max-width: 1260px){
+    /* About Cards Readjustment */
+    .about-cards{
+      flex-flow: column;
+    }
+    .card{
+      width: 500px;
+    }
+}
