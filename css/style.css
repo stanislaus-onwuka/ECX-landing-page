@@ -6,6 +6,10 @@
   padding:0px;
   box-sizing: border-box;
   font-family: 'Segoe Ui',sans-serif;
+  
+}
+body{
+  overflow-x: hidden;
 }
 section{
   width: 100%;
@@ -220,7 +224,7 @@ ul.nav-list{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/images/hero-img.png");
+    background-image: url("./images/hero-img.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -314,11 +318,12 @@ section#about{
 .read-more{
   margin-right: 10px;
 }
+
 @media only screen and (max-width: 600px){
 
   .card , 
   .about-writeup{
-    width: 350px !important;
+    width: 320px !important;
   }
 
 }
