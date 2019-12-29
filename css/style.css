@@ -361,6 +361,46 @@ section#about{
   
 } 
 
+
+/* Footer  */
+
+footer{
+  margin: 1rem;
+}
+
+.footer-images{
+  display: flex;
+  margin: 2rem auto;
+  align-content: center;
+  justify-content:center;
+}
+
+.footer-image-link{
+  flex-direction: row;
+  cursor: pointer;
+  margin: 0.7rem;
+  /* padding: 1rem; */
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  
+}
+
+.footer-underline{
+  border: 0.5px solid #C4C4C4;
+  margin: auto;
+  width: 90%;
+}
+
+footer p{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  color: #5D5D5D;
+  font-size: 15px;
+}
+
+
 @media only screen and (max-width: 1260px){
     /* About Cards Readjustment */
     .about-cards{
