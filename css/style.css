@@ -314,6 +314,61 @@ section#about{
 .read-more{
   margin-right: 10px;
 }
+/*Philosophy*/
+.visionBoard ul {
+  margin-top: 50px;
+  margin-left: 50vh;
+  text-align: center;
+  width: 50%;
+  
+}
+
+.visionBoard li{
+  align-items: center;
+  text-align: center;
+  display:inline;
+  margin-left: 15vh;
+
+}
+
+.visionBoard li:hover{
+  border-bottom: 2px solid yellow;
+}
+
+.visionBoard a:active{
+  border-bottom: 2px solid yellow;
+
+}
+
+
+.visionBoard a{
+  text-decoration: none;
+  color: black;
+}
+
+.cadsar {
+  margin-top: 100px;
+  float: right;
+  width: 80vh;
+  margin-right: 150px;
+  display:none;
+
+}
+
+.cadsar h1{
+  margin-bottom: 20px;
+}
+
+.defPage{
+  display:block;
+}
+
+.cadsar:target {
+  display: block;
+}
+
+/*End Philosophy*/
+
 
 /* Contacts */
 .contact{
