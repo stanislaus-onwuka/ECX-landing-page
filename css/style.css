@@ -314,6 +314,131 @@ section#about{
 .read-more{
   margin-right: 10px;
 }
+
+/* Contacts */
+.contact{
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/worldmap.png');
+  background-position: 50%;
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+}
+
+.contacts-div{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contacts-div h2{
+  text-transform: uppercase;
+}
+
+.contacts-div div{
+  margin: 1rem;
+}
+
+#social-media img{
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem;
+}
+
+.request-form{
+  padding: 0.5rem;
+}
+
+.request-form label{
+  font-weight: 700;
+  display: block;
+}
+
+.request-input{
+  display: inline-block;
+  
+}
+
+#request-name,
+#request-email{
+  padding: 1rem 1.5rem ;
+  border-radius: 10px;
+  margin: 1rem 0.3rem 1rem 0.3rem;
+  box-shadow: 0 3px 6px #00000029;
+  opacity: 100%;
+  border: none;
+  font-size: 16px;
+  background: #fff;
+  outline: none;
+}
+
+#request-text{
+  width: 77%;
+  height: 30vh;
+  max-width: 580px;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0 3px 6px #00000029;
+  padding: 0.5rem;
+  border: none;
+  background: #fff;
+  outline: none;
+}
+
+.submit-btn{
+  display: block;
+  margin:0.7rem 0;
+  padding: 0.5rem 3rem ;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  background: #2412CF 0% 0% no-repeat padding-box;
+  border: 0.5px solid white;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.submit-btn:hover{
+  background-color: rgb(5, 5, 90);
+}
+
+
+/* Footer  */
+
+footer{
+  margin: 1rem;
+}
+
+.footer-images{
+  display: flex;
+  margin: 2rem auto;
+  align-content: center;
+  justify-content:center;
+}
+
+.footer-image-link{
+  flex-direction: row;
+  cursor: pointer;
+  margin: 0.7rem;
+  /* padding: 1rem; */
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  
+}
+
+.footer-underline{
+  border: 0.5px solid #C4C4C4;
+  margin: auto;
+  width: 90%;
+}
+
+footer p{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  color: #5D5D5D;
+  font-size: 15px;
+}
 @media only screen and (max-width: 600px){
 
   .card, .about-writeup{
@@ -362,45 +487,6 @@ section#about{
 } 
 
 
-/* Footer  */
-
-footer{
-  margin: 1rem;
-}
-
-.footer-images{
-  display: flex;
-  margin: 2rem auto;
-  align-content: center;
-  justify-content:center;
-}
-
-.footer-image-link{
-  flex-direction: row;
-  cursor: pointer;
-  margin: 0.7rem;
-  /* padding: 1rem; */
-  width: 40px;
-  height: 40px;
-  opacity: 0.5;
-  
-}
-
-.footer-underline{
-  border: 0.5px solid #C4C4C4;
-  margin: auto;
-  width: 90%;
-}
-
-footer p{
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 2rem;
-  color: #5D5D5D;
-  font-size: 15px;
-}
-
-
 @media only screen and (max-width: 1260px){
     /* About Cards Readjustment */
     .about-cards{
@@ -409,4 +495,14 @@ footer p{
     .card{
       width: 500px;
     }
+}
+
+@media (min-width:47rem){
+  .contact{
+    flex-direction: row;
+  }
+
+  .request-form{
+    margin-left: 13%;
+  }
 }
