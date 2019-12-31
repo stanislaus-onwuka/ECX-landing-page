@@ -366,6 +366,15 @@ section#about{
   .desktop-nav{
     display: block;
   }
+  .ecx-logo{
+    display: none;
+  }
+  .container2{
+    margin: 10 auto;
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+  }
 
   /* Global styles Readjustment */
   .flex-container{
