@@ -35,6 +35,7 @@ section{
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
+  padding: 2rem;
 }
 .title{
   font-size: 1.7em;
@@ -406,11 +407,62 @@ section#about{
 /*End Philosophy*/
 
 
+/* Achievement Slides */
+#achievements{
+  width: 100%;
+}
+
+#achievement-header{
+  margin: auto;
+  text-align: center;
+}
+
+.slideshow-container{
+  width: 90%;
+  max-width: 550px;
+  margin: 20px auto;
+  
+}
+
+.slide{
+  /* display: none; */
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 5px 5p 10px gray
+}
+
+.slide img{
+  width: 100%;
+  height: 50vh;
+  animation: animate 0.5s linear;
+}
+
+#left-slide-btn, #right-slide-btn{
+  cursor: pointer;
+  /* position: absolute; */
+  display: inline-block;
+  top: 50%;
+  width: 50px;
+  padding: 1rem;
+  color: black;
+  background: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 25px;
+}
+
+#right-slide-btn {
+  right: 0;
+}
+
+
+
 /* Contacts */
 .contact{
   display: flex;
   flex-direction: column;
-  background-image: url('/images/worldmap.png');
+  background: url('/images/worldmap.png');
   background-position: 50%;
   width: 100%;
   padding: 2rem;
@@ -528,8 +580,33 @@ footer p{
   text-transform: uppercase;
   margin-top: 2rem;
   color: #5D5D5D;
-  font-size: 15px;
+  font-size: 12px;
 }
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */
+
+@keyframes animate{
+  0%{transform: scale(1.09);}
+  /* 50%{transform: scale(1.01);} */
+  100%{transform: scale(1.01);}
+}
+
 @media only screen and (max-width: 600px){
 
   .card, .about-writeup{
