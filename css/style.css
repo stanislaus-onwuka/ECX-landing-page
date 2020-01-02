@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: 'Segoe Ui',sans-serif;
 }
+body{
+  background-color: rgb(255, 255, 255);
+}
 section{
   width: 100%;
 }
