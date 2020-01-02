@@ -27,6 +27,7 @@ section{
   box-shadow: 0 2px 5px #34383a;
   height: 50px;
   padding: 10px;
+  position: fixed;
   background-color: #fff;
 }
     
@@ -34,7 +35,7 @@ section{
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  padding: 2rem;
+  
 }
 .title{
   font-size: 1.7em;
@@ -260,6 +261,10 @@ ul.nav-list{
     flex-direction: column;
     justify-content: center;
     color: #000;
+    /* background-image: url("../images/undraw_sharing_articles_t5aa.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover; */
 }
 
 .hero button{
@@ -725,7 +730,6 @@ footer p{
     margin: 10px auto;
     box-shadow: none;
     background-color: #fff;
-    position: fixed;
   }
 
   /* Global styles Readjustment */
