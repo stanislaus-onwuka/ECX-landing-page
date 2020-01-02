@@ -27,6 +27,7 @@ section{
   box-shadow: 0 2px 5px #34383a;
   height: 50px;
   padding: 10px;
+  position: fixed;
   background-color: #fff;
 }
     
@@ -34,7 +35,7 @@ section{
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  padding: 2rem;
+  
 }
 .title{
   font-size: 1.7em;
@@ -731,7 +732,6 @@ footer p{
     margin: 10px auto;
     box-shadow: none;
     background-color: #fff;
-    position: fixed;
   }
 
   /* Global styles Readjustment */
