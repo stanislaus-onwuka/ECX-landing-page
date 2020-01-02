@@ -462,7 +462,7 @@ section#about{
 .contact{
   display: flex;
   flex-direction: column;
-  background: url('/images/worldmap.png');
+  background: url('../images/worldmap.png');
   background-position: 50%;
   width: 100%;
   padding: 2rem;
