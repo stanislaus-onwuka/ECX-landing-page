@@ -106,9 +106,7 @@ ul.nav-list{
   position: absolute;
   top: -7px;
   left: -5px;
-  
   cursor: pointer;
-  
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
   
@@ -125,7 +123,7 @@ ul.nav-list{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: rgba(68, 53, 207, 0.5);
+  background-color: rgb(57, 101, 223);
   border-radius: 3px;
   
   z-index: 1;
@@ -173,7 +171,7 @@ ul.nav-list{
 {
   position: absolute;
   width:300px;
-  height: 630px;
+  height: 700px;
   margin: -100px 0 0 -40px;
   padding: 50px;
   padding-top: 125px;
@@ -236,15 +234,17 @@ ul.nav-list{
   transition: 0.3s;
 }
 
+.nav-list1 > li > a{
+  text-decoration:none;
+  color: #000;
+}
+
 .nav-list1> li:hover{
 
   border-bottom: 4px solid #F31C66;
 
 }
 
-.active{
-  border-bottom: 4px solid #F31C66;
-}
 
 .ecx-logo > h3{
   margin-top: 10px;
@@ -263,12 +263,16 @@ ul.nav-list{
 }
 
 .hero button{
-  background: linear-gradient(270deg,#C1F4FC,#4435CF);
+  background-color: #4435CF;
   border: none;
-  width: 30%;
+  width: 150px;
+  font-size: 18px;
   padding: 10px;
   border-radius: 5px;
   margin-top: 15px;
+}
+.hero button:hover{
+  background-color: rgb(57, 101, 223);
 }
 .hero button a{
   text-decoration: none;
@@ -314,8 +318,7 @@ section#about{
   color: #fff;
 }
 .about-writeup p{
-  font-size: 0.9em;
-  line-height: 1em;
+  font-size: 17px;
 }
 
 .card{
@@ -335,11 +338,11 @@ section#about{
 }
 
 .card > p{
-  font-size: 0.9em;
+  font-size: 16px;
   line-height: 1.3em;
 }
 .card > img{
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .read-more-container{
@@ -347,11 +350,94 @@ section#about{
   margin-bottom: 15px;
 }
 
+.read-more-container1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: yellow;
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.fa1{
+  color: #fff;
+}
 .read-more{
   margin-right: 10px;
 }
 /*Philosophy*/
-.visionBoard ul {
+.cadsar{
+  max-width: 600px;
+}
+.visionBoard-list > li{
+  list-style-type: none;
+
+}
+
+.visionBoard-list > li > a{
+  text-decoration: none;
+  color: black;
+  margin-right: 60px;
+  padding: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.vision-list3{
+  margin-right: 0px !important;
+}
+
+.visionBoard-list > li > a:hover{
+  border-bottom: 2px solid yellow;
+}
+
+.active1{
+  border-bottom: 2px solid yellow;
+}
+
+.content-container{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-container2{
+  display: none;
+}
+
+.content-container3{
+  display: none;
+}
+
+.yes-display{
+  display: flex;
+}
+.no-display{
+  display: none;
+}
+
+.content-container > img{
+  margin-right: 15px;
+}
+
+
+.visionBoard-list{
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #9d9d9d;
+  padding: 7px;
+  width: fit-content;
+  margin: auto;
+  
+}
+
+#ourPhil{
+  padding: 20px;
+}
+
+
+/* .visionBoard ul {
   margin-top: 50px;
   margin-left: 50vh;
   text-align: center;
@@ -401,7 +487,7 @@ section#about{
 
 .cadsar:target {
   display: block;
-}
+} */
 
 /*End Philosophy*/
 
@@ -410,7 +496,7 @@ section#about{
 .contact{
   display: flex;
   flex-direction: column;
-  background-image: url('/images/worldmap.png');
+  background: url('./images/worldmap.png');
   background-position: 50%;
   width: 100%;
   padding: 2rem;
@@ -535,7 +621,17 @@ footer p{
   .card, .about-writeup{
     width: 350px !important;
   }
+   .visionBoard-list > li > a{
+    margin-right: 0px;
+  }
 
+
+}
+
+@media only screen and (max-width: 780px){
+  .yes-display{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 600px){
@@ -550,10 +646,10 @@ footer p{
     display: none;
   }
   .container2{
-    margin: 10 auto;
+    margin: 10px auto;
     box-shadow: none;
-    background-color: transparent;
-    position: relative;
+    background-color: #fff;
+    position: fixed;
   }
 
   /* Global styles Readjustment */
@@ -573,11 +669,11 @@ footer p{
   .sub-container{
     display: flex;
   }
-
+ 
   /* Landing Page */
   .hero{
     width: 50%;
-    height: 76vh;
+    height: 90vh;
     background-image: none;
   }
   .hero-img{
