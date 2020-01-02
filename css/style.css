@@ -253,13 +253,19 @@ ul.nav-list{
 }
 
 /* HERO SECTION */
+#hero{
+  background-color: white;
+  background-image: url(../images/ECX.png);
+
+}
+
 .hero{
-    width: 100%;
-    height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #000;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
 }
 
 .hero button{
