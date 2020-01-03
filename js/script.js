@@ -1,8 +1,6 @@
 const Mission = document.querySelector(".vision-list1")
 const Vision = document.querySelector(".vision-list2")
 const Philosophy = document.querySelector(".vision-list3")
-
-
 const MissionC = document.querySelector(".content-container1")
 const VisionC = document.querySelector(".content-container2")
 const PhilosophyC = document.querySelector(".content-container3")
@@ -10,7 +8,6 @@ const PhilosophyC = document.querySelector(".content-container3")
 Mission.addEventListener("click",missionFn)
 
 function missionFn() {
-    // console.log("xup")
     MissionC.classList.add("yes-display");
     MissionC.classList.remove("no-display");
     PhilosophyC.classList.add("no-display");
@@ -23,7 +20,6 @@ function missionFn() {
 Vision.addEventListener("click", visionFn)
 
 function visionFn() {
-    // console.log("xup2")
     MissionC.classList.add("no-display");
     PhilosophyC.classList.add("no-display");
     VisionC.classList.add("yes-display");
@@ -36,7 +32,6 @@ function visionFn() {
 Philosophy.addEventListener("click", philoFn)
 
 function philoFn() {
-    // console.log("xup3")
     MissionC.classList.add("no-display");
     PhilosophyC.classList.add("yes-display");
     PhilosophyC.classList.remove("no-display");
@@ -46,19 +41,32 @@ function philoFn() {
     Philosophy.classList.add("active1");
 }
 
-// const imgSlide = document.querySelector('.slide');
-// const images = ['"./images/Achievements slides/Totel_Photography-6587.jpg"','"./images/Achievements slides/Totel_Photography-6634.jpg"','"./images/Achievements slides/Totel_Photography-6772.jpg"','"./images/Achievements slides/Totel_Photography-6915.jpg"'];
+const navC = document.querySelector(".container2");
+var previousScroll = window.scrollY;
+window.addEventListener("scroll", scrollFn);
 
+function scrollFn() {
+    if (window.scrollY < previousScroll) {
+        console.log("going up")
+        navC.classList.remove("nav-down")
+        navC.classList.add("nav-up")
+    } else if (window.scrollY > previousScroll) {
+        console.log("going down")
+        navC.classList.add("nav-down")
+        navC.classList.remove("nav-up")
+    } else {
+        navC.classList.add("nav-up")
+    }
+    previousScroll = window.scrollY;
+}
 
-// let x = 0;
+const menu = document.querySelector(".hidden-menu");
+const nav = document.querySelector(".nav");
 
-// function slider() {
-//     if (x < images.length){
-//         x = x + 1;
-//     }else{
-//         x = 1;
-//     }
-//     imgSlide.innerHTML = "<img src="+images[x-1]+" class = slide-img>";
-// }
+const show = function () {
+    nav.classList.toggle("sample");
+    menu.querySelector(".span2").classList.toggle("spanTrans")
+    navC.classList.toggle("nav-stable")
+}
 
-// setInterval(slider, 2000);
+menu.addEventListener("click", show)
