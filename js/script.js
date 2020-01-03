@@ -64,3 +64,31 @@ function philoFn() {
 // }
 
 // setInterval(slider, 2000);
+const navC = document.querySelector(".container2")
+var previousScroll = window.scrollY;
+window.addEventListener("scroll", scrollFn);
+
+function scrollFn() {
+    if (window.scrollY < previousScroll) {
+        console.log("going up")
+        navC.classList.add("nav-down")
+    } else {
+        console.log("going down")
+        navC.classList.remove("nav-down")
+    }
+    previousScroll = window.scrollY;
+    console.log(previousScroll)
+}
+
+const menu = document.querySelector(".hidden-menu");
+const nav = document.querySelector(".nav")
+
+const show = function () {
+    console.log("welp")
+    nav.classList.toggle("sample");
+    // menu.querySelector(".span2").classList.toggle("spanDel");
+    menu.querySelector(".span2").classList.toggle("spanTrans")
+}
+
+
+menu.addEventListener("click", show)
