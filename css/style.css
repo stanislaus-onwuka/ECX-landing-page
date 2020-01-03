@@ -43,7 +43,10 @@ section{
   top: -70px;
 }
 .nav-up{
-  top: 0px;
+  top: -10px;
+}
+.nav-stable{
+  top: auto;
 }
 .overflow-for-body{
   overflow-y: hidden;
