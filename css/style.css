@@ -10,7 +10,10 @@ body {
   font-family: 'Segoe Ui', sans-serif;
 }
 
-section {
+body{
+  background-color: rgb(255, 255, 255);
+}
+section{
   width: 100%;
 }
 
@@ -32,6 +35,7 @@ section {
   width: 100%;
   height: 50px;
   background-color: #fff;
+  padding: 10px;
 }
 
 .nav-down{
@@ -204,7 +208,14 @@ ul.nav-list {
 }
 
 /* HERO SECTION */
-.hero {
+
+#hero{
+  background-color: white;
+  background-image: url(../images/ECX.png);
+
+}
+
+.hero{
   width: 100%;
   height: 88vh;
   display: flex;

@@ -1,5 +1,3 @@
-
-
 const Mission = document.querySelector(".vision-list1")
 const Vision = document.querySelector(".vision-list2")
 const Philosophy = document.querySelector(".vision-list3")
@@ -12,7 +10,7 @@ const PhilosophyC = document.querySelector(".content-container3")
 Mission.addEventListener("click",missionFn)
 
 function missionFn() {
-    console.log("xup")
+    // console.log("xup")
     MissionC.classList.add("yes-display");
     MissionC.classList.remove("no-display");
     PhilosophyC.classList.add("no-display");
@@ -25,7 +23,7 @@ function missionFn() {
 Vision.addEventListener("click", visionFn)
 
 function visionFn() {
-    console.log("xup2")
+    // console.log("xup2")
     MissionC.classList.add("no-display");
     PhilosophyC.classList.add("no-display");
     VisionC.classList.add("yes-display");
@@ -38,7 +36,7 @@ function visionFn() {
 Philosophy.addEventListener("click", philoFn)
 
 function philoFn() {
-    console.log("xup3")
+    // console.log("xup3")
     MissionC.classList.add("no-display");
     PhilosophyC.classList.add("yes-display");
     PhilosophyC.classList.remove("no-display");
