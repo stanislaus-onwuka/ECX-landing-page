@@ -482,6 +482,50 @@ section#about {
   background-color: rgb(5, 5, 90);
 }
 
+/* Team */
+.ourTeam{
+  align-self: center;
+  padding-top:30px;
+  background-color: rgb(231, 231, 235);
+  width:100%;
+}
+
+#teamHead{
+  text-align-last: center;
+  text-decoration: underline;
+  font-size:40px;
+  margin-top:10px;
+  margin-bottom:10px;
+  
+}
+
+#team-container {
+  width:100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom:30px;
+}
+
+#member {
+  margin:15px;
+  width: 20vw;
+  height: 20vh;
+  display: inline-block;
+  border-radius: 20%;;
+  
+  color: rgb(57, 47, 155);
+}
+
+#member p{
+  color: rgb(192, 21, 21);
+}
+
+#member img {
+  border-radius: 100%;
+  text-align: center;
+  margin-top:5vh;
+  
+}
 
 /* Contacts */
 .contact {
