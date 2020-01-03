@@ -34,9 +34,10 @@ section{
 .container2 {
   width: 100%;
   height: 60px;
-  background-color: #fff;
+  background-color: transparent;
   position: fixed;
   transition: top 0.3s;
+  z-index: 5;
 }
 
 .nav-down{
@@ -78,7 +79,7 @@ section{
 
 .nav {
   width: 200px;
-  height: 100%;
+  height: 110%;
   background-color: #4435cfe3;
   position: fixed;
   left: 100%;
@@ -323,6 +324,7 @@ section#about {
 .card>p {
   font-size: 16px;
   line-height: 1.3em;
+  margin-bottom: 10px;
 }
 
 .card>img {
@@ -424,6 +426,39 @@ section#about {
   padding: 20px;
 }
 
+/* What we do */
+.wwd-header{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5rem;
+}
+#wwd{
+  height: auto;
+  padding: 20px;
+}
+.wwd-content{
+  width: auto;
+}
+.wwd-content-container{
+  display: flex;
+  align-items: center;
+}
+.wwd-image{
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+}
+.wwd-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+.fa{
+  font-size: 30px !important;
+  color: darkgrey;
+  margin-right: 10px;
+}
 
 
 /* Gallery */
@@ -431,7 +466,7 @@ section#about {
   width: 100%;
 }
 
-#gallery h3{
+#gallery h2{
   margin: 1.5rem auto;
   text-align: center;
   text-transform: uppercase;
@@ -492,8 +527,7 @@ section#about {
 
 #teamHead{
   text-align-last: center;
-  text-decoration: underline;
-  font-size:40px;
+  font-size:25px;
   margin-top:10px;
   margin-bottom:10px;
   
@@ -694,6 +728,7 @@ footer p {
     margin-right: 0px;
   }
 
+ 
 
 }
 
@@ -754,6 +789,9 @@ footer p {
   .hero-img {
     display: block;
   }
+   .wwd-container {
+     grid-template-columns: 1fr 1fr;
+   }
 
 }
 
