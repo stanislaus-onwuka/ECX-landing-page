@@ -69,10 +69,12 @@ window.addEventListener("scroll", scrollFn);
 function scrollFn() {
     if (window.scrollY < previousScroll) {
         console.log("going up")
-        navC.classList.add("nav-down")
+        navC.classList.remove("nav-down")
+        navC.classList.add("nav-up")
     } else {
         console.log("going down")
-        navC.classList.remove("nav-down")
+        navC.classList.add("nav-down")
+        navC.classList.remove("nav-up")
     }
     previousScroll = window.scrollY;
     console.log(previousScroll)
