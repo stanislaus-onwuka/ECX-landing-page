@@ -531,7 +531,7 @@ section#about {
 .contact {
   display: flex;
   flex-direction: column;
-  background: url('../images/worldmap.png');
+  background: url('https://res.cloudinary.com/ecx/image/upload/q_auto:good/v1578084382/ECX%20gallery/worldmap_jscc5w.png');
   background-position: 50%;
   width: 100%;
   padding: 2rem;
@@ -619,7 +619,7 @@ section#about {
 /* Footer  */
 
 footer {
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .footer-images {
