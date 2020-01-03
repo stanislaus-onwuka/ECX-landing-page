@@ -324,6 +324,7 @@ section#about {
 .card>p {
   font-size: 16px;
   line-height: 1.3em;
+  margin-bottom: 10px;
 }
 
 .card>img {
@@ -425,6 +426,39 @@ section#about {
   padding: 20px;
 }
 
+/* What we do */
+.wwd-header{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5rem;
+}
+#wwd{
+  height: auto;
+  padding: 20px;
+}
+.wwd-content{
+  width: auto;
+}
+.wwd-content-container{
+  display: flex;
+  align-items: center;
+}
+.wwd-image{
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+}
+.wwd-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+.fa{
+  font-size: 30px !important;
+  color: darkgrey;
+  margin-right: 10px;
+}
 
 
 /* Gallery */
@@ -432,7 +466,7 @@ section#about {
   width: 100%;
 }
 
-#gallery h3{
+#gallery h2{
   margin: 1.5rem auto;
   text-align: center;
   text-transform: uppercase;
@@ -694,6 +728,7 @@ footer p {
     margin-right: 0px;
   }
 
+ 
 
 }
 
@@ -754,6 +789,9 @@ footer p {
   .hero-img {
     display: block;
   }
+   .wwd-container {
+     grid-template-columns: 1fr 1fr;
+   }
 
 }
 
