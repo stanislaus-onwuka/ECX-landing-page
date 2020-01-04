@@ -60,11 +60,18 @@ function scrollFn() {
 
 const menu = document.querySelector(".hidden-menu");
 const nav = document.querySelector(".nav");
+const menuspan = document.querySelector(".menu-span");
+const menuspan2 = document.querySelector(".menu-span2");
+const menuspan3 = document.querySelector(".menu-span3");
+
 
 const show = function () {
     nav.classList.toggle("sample");
     menu.querySelector(".span2").classList.toggle("spanTrans")
     navC.classList.toggle("nav-stable")
+    menuspan.classList.toggle("menu-span-black")
+    menuspan2.classList.toggle("menu-span-black")
+    menuspan3.classList.toggle("menu-span-black")
 }
 
 menu.addEventListener("click", show)
