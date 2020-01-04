@@ -220,7 +220,10 @@ ul.nav-list {
 #hero {
   background-color: white;
   background-image: url(../images/ECX.png);
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  background-size: auto;
 }
 
 .hero {
@@ -579,7 +582,7 @@ section#about {
 .contact {
   display: flex;
   flex-direction: column;
-  background: url('../images/worldmap.png');
+  background: url('https://res.cloudinary.com/ecx/image/upload/q_auto:good/v1578084382/ECX%20gallery/worldmap_jscc5w.png');
   background-position: 50%;
   width: 100%;
   padding: 2rem;
@@ -617,7 +620,6 @@ section#about {
 
 .request-input {
   display: inline-block;
-
 }
 
 #request-name,
@@ -636,14 +638,14 @@ section#about {
 
 #request-text {
   width: 77%;
-  height: 20vh;
+  height: 22vh;
   max-width: 580px;
   border-radius: 10px;
   resize: none;
   box-shadow: 0 3px 6px #00000085;
   padding: 0.5rem;
   border: none;
-  background: #fff;
+  background: rgba(245, 243, 243, 0.938);
   outline: none;
 }
 
@@ -667,7 +669,7 @@ section#about {
 /* Footer  */
 
 footer {
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .footer-images {
