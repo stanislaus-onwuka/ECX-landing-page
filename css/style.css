@@ -223,7 +223,7 @@ ul.nav-list {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: local;
-  background-size: auto;
+  background-size: cover;
 }
 
 .hero{
