@@ -80,7 +80,7 @@ section {
 
 
 .menu-span-black{
-  background: #fff !important;
+  background: #252525 !important;
 }
 
 
@@ -91,13 +91,13 @@ section {
 .nav {
   width: 200px;
   height: 110%;
-  background-color: #4435cfe3;
+  background-color: #ffffff;
   position: fixed;
   left: 100%;
   transition: all 0.7s;
   display: flex;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: top;
   justify-content: space-around;
 }
 
@@ -138,11 +138,11 @@ section {
 }
 
 .nav-link>li {
-  margin-bottom: 8px;
+  border-bottom: 1px #888 solid;
+  margin-bottom: 20px;
   font-size: 20px;
-  color: #fff;
+  color: #888;
   letter-spacing: 1px;
-
 }
 
 .nav-link>li:hover {
@@ -155,6 +155,7 @@ section {
 
 ul.nav-list {
   list-style-type: none;
+  padding-top: 3rem;
 }
 
 
@@ -167,7 +168,7 @@ ul.nav-list {
 
 #menu-icon1 {
   font-size: 30px;
-  color: #fff;
+  color: #2d9eef;
 }
 
 .menu-icons:hover {
@@ -178,7 +179,7 @@ ul.nav-list {
 #menu-icon {
   margin-right: 14px;
   font-size: 30px;
-  color: #fff;
+  color: #000;
 }
 
 .last-list-child>li {
@@ -224,6 +225,7 @@ ul.nav-list {
 /* HERO SECTION */
 
 #hero {
+  background-image: url('../images/Group\ 252.jpg');
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -241,7 +243,7 @@ ul.nav-list {
 }
 
 .hero button {
-  background-color: #4435CF;
+  background-color: #3cb1fd;
   border: none;
   width: 100px;
   font-size: 18px;
@@ -261,6 +263,7 @@ ul.nav-list {
 
 .hero-img {
   display: none;
+  opacity: 0;
 }
 
 /* LOGOs AREA */
@@ -282,7 +285,7 @@ ul.nav-list {
 
 /* ABOUT SECTION */
 section#about {
-  background: linear-gradient(258deg, rgb(172, 172, 172), rgba(68, 53, 207));
+  background: linear-gradient(258deg, rgb(0, 49, 51), #3cb1fd);
   box-sizing: border-box !important;
   padding: 10px 0 10px 0;
 }
@@ -301,7 +304,6 @@ section#about {
 }
 
 .about-writeup {
-  width: 500px;
   margin-bottom: 50px;
 }
 
@@ -355,6 +357,13 @@ section#about {
 }
 
 /*Philosophy*/
+
+#ourPhil{
+  background-image: url('../images/path 732.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .cadsar {
   max-width: 600px;
 }
@@ -424,7 +433,7 @@ section#about {
 
 #ourPhil {
   padding: 20px;
-  background-color: #FEFFF3;
+  /* background-color: #FEFFF3; */
 }
 
 /* What we do */
@@ -441,8 +450,12 @@ section#about {
 }
 
 #wwd {
-  height: auto;
+  background-image: url('../images/Group\ 257.jpg');
+  background-position: center;
+  background-attachment: local;
   padding: 50px;
+  background-repeat: none;
+  background-size: cover;
 }
 
 .wwd-content {
@@ -487,12 +500,12 @@ section#about {
 
 .pictures {
   display: grid;
-  margin: 2rem;
+  margin: 5rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25% 25% 25% 25%;
   justify-items: stretch;
-  align-items: stretch;
-  grid-gap: 6px;
+  align-items: inherit;
+  grid-gap: 50px;
 }
 
 .picture {
@@ -521,7 +534,7 @@ section#about {
   cursor: pointer;
   border-radius: 3px;
   color: #fff;
-  background: #2412CF 0% 0% no-repeat padding-box;
+  background: #3cb1fd 0% 0% no-repeat padding-box;
   /* border: 0.5px solid white; */
   box-shadow: 0 3px 6px #00000029;
 }
@@ -653,7 +666,7 @@ section#about {
   cursor: pointer;
   border-radius: 3px;
   color: #fff;
-  background: #2412CF 0% 0% no-repeat padding-box;
+  background: #3cb1fd 0% 0% no-repeat padding-box;
   border: 0.5px solid white;
   box-shadow: 0 3px 6px #00000029;
 }
