@@ -227,6 +227,10 @@ ul.nav-list {
 #hero {
   background-image: url('../images/Group\ 252.jpg');
   background-color: white;
+<<<<<<< HEAD
+=======
+  background-image: url('../images/ECX.png');
+>>>>>>> 4dbffa7de376ba80738204948616a443140503bd
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: local;
@@ -504,13 +508,18 @@ section#about {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25% 25% 25% 25%;
   justify-items: stretch;
+<<<<<<< HEAD
   align-items: inherit;
   grid-gap: 50px;
+=======
+  align-items: stretch;
+  grid-gap: 8px;
+>>>>>>> 4dbffa7de376ba80738204948616a443140503bd
 }
 
 .picture {
   box-shadow: 0 0 5px #232323;
-  transition-duration: 0.3s;
+  transition-duration: 0.18s;
 }
 
 .picture img {
@@ -520,7 +529,7 @@ section#about {
 
 .picture:hover {
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.037);
   z-index: 2;
 }
 
@@ -587,6 +596,83 @@ section#about {
   margin-top: 5vh;
 
 }
+
+/* Achievements */
+.achievements{
+  margin: 1rem 0;
+  padding: 0.5rem;
+  animation: ease-out;
+}
+
+.achievements h2{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0.7rem;
+}
+
+.achievements-slide{
+  width: 100%;
+}
+
+#achievement-one,
+#achievement-two,
+#achievement-three{
+  display: block;
+	top: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
+  padding: 0.3rem;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+
+#achievement-one{
+  animation: animate-1 15s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+#achievement-two{
+  animation: animate-2 15s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+#achievement-three{
+  animation: animate-3 15s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes animate-1 {
+	0%, 8.3% { opacity: 0; }
+  8.3%,25% { opacity: 1; }
+  33.33%, 100% { opacity: 1; }
+}
+
+@keyframes animate-2 {
+	0%, 33.33% { opacity: 0; }
+  41.63%, 58.29% { opacity: 1; }
+  66.66%, 100% { opacity: 1; }
+}
+
+@keyframes animate-3 {
+	0%, 66.66% { opacity: 0; }
+  74.96%, 91.62% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out{
+  0%{ opacity: 0;}
+  50%{ opacity: 0.5;}
+  100%{ opacity: 1;}
+}
+
 
 /* Contacts */
 .contact {
@@ -679,7 +765,7 @@ section#about {
 /* Footer  */
 
 footer {
-  margin: 0 1rem;
+  margin: 0.5rem auto;
 }
 
 .footer-images {
