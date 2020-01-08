@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/gallery.css" rel="stylesheet">
     <title>ECX Gallery</title>
 </head>
 <body>
@@ -15,11 +16,12 @@
         </div>
         <nav class="desktop-nav">
             <ul class="nav-list1">
-            <li class="active"><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#wwd">What we do</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#teamHead">Team</a></li>
+            <li class="active"><a href="./index.html#hero">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#wwd">What we do</a></li>
+            <li><a href="./index.html#gallery">Gallery</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li><a href="./index.html#teamHead">Team</a></li>
             </ul>
         </nav>
 
@@ -30,30 +32,38 @@
         </div>
         <div class="nav">
             <ul class="nav-list">
-            <a class="nav-link" href="#hero">
+            <a class="nav-link" href="./index.html#hero">
                 <li>Home</li>
             </a>
-            <a class="nav-link" href="#about">
+            <a class="nav-link" href="./index.html#about">
                 <li>About</li>
             </a>
-            <a class="nav-link" href="#wwd">
+            <a class="nav-link" href="./index.html#wwd">
                 <li>What we do</li>
             </a>
-            <a class="nav-link" href="#contact">
+            <a class="nav-link" href="./index.html#gallery">
+                <li>Gallery</li>
+            </a>
+            <a class="nav-link" href="./index.html#contact">
                 <li>Contact</li>
             </a>
-            <a class="nav-link last-list-child" href="#team">
+            <a class="nav-link last-list-child" href="./index.html#team">
                 <li>Team</li>
             </a>
             <i class="fa fa-instagram menu-icons" id="menu-icon" aria-hidden="true"></i>
             <i class="fa fa-twitter menu-icons" id="menu-icon1" aria-hidden="true"></i>
             </ul>
         </div>
-    <nav>
+    </nav>
 
     <main>
-        <div class="gallery"></div>
+        <section class="gallery">
+            <h2 id="gallery-text" >Gallery</h2>
+            <hr>
+            <div class="pictures"></div>
+        </section>
     </main>
+
 
   <!-- FOOTER-->
   <footer>
@@ -68,7 +78,8 @@
     <hr class="footer-underline">
     <p>2019 ecx website</p>
   </footer>
-    <script src="./js/gallery.js"></script>
+    
     <script src="./js/script.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>
