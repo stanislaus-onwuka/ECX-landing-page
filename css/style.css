@@ -467,7 +467,7 @@ section#about {
 
 #wwd {
   background-image: url('../images/wwd.jpg');
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(51, 86, 107, 0.144);
   background-position: center;
   padding: 3rem;
   background-repeat: none;

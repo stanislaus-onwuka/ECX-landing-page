@@ -1,11 +1,11 @@
 const galleryContainer = document.querySelector('.pictures');
 const overlay = document.querySelector('.img-overlay');
 const imgArr = [
-                'https://res.cloudinary.com/ecx/image/upload/q_auto,f_auto/v1578493536/ECX%20gallery/Main%20Gallery/Totel_Photography-7371_brqbn4.png',
-                'https://res.cloudinary.com/ecx/image/upload/q_auto,f_auto/v1578493485/ECX%20gallery/Main%20Gallery/Totel_Photography-7362_d26zxo.png',
-                'https://res.cloudinary.com/ecx/image/upload/q_auto,f_auto/v1578493487/ECX%20gallery/Main%20Gallery/Totel_Photography-7396_ezgycl.png',
-                'https://res.cloudinary.com/ecx/image/upload/q_auto,f_auto/v1578493486/ECX%20gallery/Main%20Gallery/Totel_Photography-7379_ixwtss.png',
-                'https://res.cloudinary.com/ecx/image/upload/q_auto,f_auto/v1578493487/ECX%20gallery/Main%20Gallery/Totel_Photography-7391_ccojzh.png',
+                'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493536/ECX%20gallery/Main%20Gallery/Totel_Photography-7371_brqbn4.png',
+                'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493485/ECX%20gallery/Main%20Gallery/Totel_Photography-7362_d26zxo.png',
+                'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493487/ECX%20gallery/Main%20Gallery/Totel_Photography-7396_ezgycl.png',
+                'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493486/ECX%20gallery/Main%20Gallery/Totel_Photography-7379_ixwtss.png',
+                'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493487/ECX%20gallery/Main%20Gallery/Totel_Photography-7391_ccojzh.png',
                 'https://res.cloudinary.com/ecx/image/upload/v1578493486/ECX%20gallery/Main%20Gallery/Totel_Photography-7378_tasyvx.png',
                 'https://res.cloudinary.com/ecx/image/upload/v1578493488/ECX%20gallery/Main%20Gallery/Totel_Photography-7407_zzkvhe.png',
                 'https://res.cloudinary.com/ecx/image/upload/v1578493486/ECX%20gallery/Main%20Gallery/Totel_Photography-7390_m31xzz.png',
