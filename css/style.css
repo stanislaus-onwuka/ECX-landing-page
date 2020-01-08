@@ -1,13 +1,18 @@
 /* PRE DEFINED CLASSES AND ELEMENT STYLES */
 @import url(https://fonts.googleapis.com/css?family=Segoe+Ui:300italic,400italic,700italic,300,400,700);
 
-*,
-html,
+
 body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Segoe Ui', sans-serif;
+}
+*,
+html{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
 }
 
 body {
@@ -37,7 +42,7 @@ section {
   height: 60px;
   background-color: #fff;
   position: fixed;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
   transition: top 0.3s;
   z-index: 5;
 }
@@ -79,7 +84,7 @@ section {
 }
 
 
-.menu-span-black{
+.menu-span-black {
   background: #252525 !important;
 }
 
@@ -231,7 +236,7 @@ ul.nav-list {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+
 }
 
 .hero {
@@ -323,7 +328,12 @@ section#about {
     40px;
 }
 
-.card>h3 {font-size: 1.2em;font-weight: normal;line-height: 0.9em;margin: 0.5em 0 0.5em 0;}
+.card>h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 0.9em;
+  margin: 0.5em 0 0.5em 0;
+}
 
 .card>p {
   font-size: 16px;
@@ -359,12 +369,13 @@ section#about {
 
 /*Philosophy*/
 
-#ourPhil{
+#ourPhil {
   background-image: url('../images/path 732.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .cadsar {
   max-width: 600px;
 }
@@ -504,13 +515,11 @@ section#about {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25% 25% 25% 25%;
   justify-items: stretch;
-<<<<<<< HEAD
-  align-items: inherit;
+  <<<<<<< HEAD align-items: inherit;
   grid-gap: 50px;
-=======
-  align-items: stretch;
+  =======align-items: stretch;
   grid-gap: 8px;
->>>>>>> 4dbffa7de376ba80738204948616a443140503bd
+  >>>>>>>4dbffa7de376ba80738204948616a443140503bd
 }
 
 .picture {
@@ -593,80 +602,206 @@ section#about {
 
 }
 
-/* Achievements */
-.achievements{
-  margin: 1rem 0;
-  padding: 0.5rem;
-  animation: ease-out;
+/* achievement slideshow */
+.ach-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins',
+  sans-serif !important;
 }
 
-.achievements h2{
+.slideshow-container {
+  position: relative;
+  background: linear-gradient(258deg, rgb(0, 49, 51), #3cb1fd);
+  color: #fff;
+  padding-top: 10px;
+  
+}
+
+
+.mySlides {
+  display: none;
+  padding: 60px;
+  text-align: center;
+  font-family: 'Poppins',
+  sans-serif !important;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: cornflowerblue;
+}
+
+
+.achievements {
+  padding: 1rem;
+  animation: ease-out;
+  color: #fff;
+
+}
+
+.achievements h2 {
   text-transform: uppercase;
   text-align: center;
   margin: 0.2rem;
   padding: 0.7rem;
 }
 
-.achievements-slide{
+.achievements-slide {
   width: 100%;
 }
 
 #achievement-one,
 #achievement-two,
-#achievement-three{
+#achievement-three {
   display: block;
-	top: 2rem;
+  top: 2rem;
   width: 100%;
   font-size: 1.2rem;
   text-align: center;
   margin: auto;
   padding: 0.3rem;
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 
-#achievement-one{
+#achievement-one {
   animation: animate-1 15s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
 }
 
-#achievement-two{
+#achievement-two {
   animation: animate-2 15s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
 }
 
-#achievement-three{
+#achievement-three {
   animation: animate-3 15s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
 }
 
 @keyframes animate-1 {
-	0%, 8.3% { opacity: 0; }
-  8.3%,25% { opacity: 1; }
-  33.33%, 100% { opacity: 1; }
+
+  0%,
+  8.3% {
+    opacity: 0;
+  }
+
+  8.3%,
+  25% {
+    opacity: 1;
+  }
+
+  33.33%,
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes animate-2 {
-	0%, 33.33% { opacity: 0; }
-  41.63%, 58.29% { opacity: 1; }
-  66.66%, 100% { opacity: 1; }
+
+  0%,
+  33.33% {
+    opacity: 0;
+  }
+
+  41.63%,
+  58.29% {
+    opacity: 1;
+  }
+
+  66.66%,
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes animate-3 {
-	0%, 66.66% { opacity: 0; }
-  74.96%, 91.62% { opacity: 1; }
-  100% { opacity: 1; }
+
+  0%,
+  66.66% {
+    opacity: 0;
+  }
+
+  74.96%,
+  91.62% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes fade-out{
-  0%{ opacity: 0;}
-  50%{ opacity: 0.5;}
-  100%{ opacity: 1;}
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -823,6 +958,7 @@ footer p {
     margin-left: 13%;
   }
 }
+
 /* For Gallery */
 @media (min-width:40rem) {
   .pictures {
@@ -855,7 +991,7 @@ footer p {
     justify-content: flex-end !important;
     flex-flow: inherit;
   }
- 
+
 
   .container1 {
     width: 90%;
@@ -898,13 +1034,13 @@ footer p {
     margin-right: 0px;
   }
 
-   #wwd {
-     background-image: none;
-   }
+  #wwd {
+    background-image: none;
+  }
 
-   #hero{
-     background-image: none;
-   }
+  #hero {
+    background-image: none;
+  }
 
 
 }
@@ -936,7 +1072,7 @@ footer p {
   .ecx-logo {
     margin: 0px;
   }
- 
+
 }
 
 

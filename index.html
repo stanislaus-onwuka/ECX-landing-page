@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ECX Landing page">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>ECX | welcome</title>
 </head>
@@ -18,11 +19,11 @@
     </div>
     <nav class="desktop-nav">
       <ul class="nav-list1">
-        <li class="active"><a href="#hero">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#wwd">What we do</a></li>
+        <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#teamHead">Team</a></li>
       </ul>
     </nav>
 
@@ -42,12 +43,13 @@
         <a class="nav-link" href="#wwd">
           <li>What we do</li>
         </a>
-        <a class="nav-link" href="#contact">
-          <li>Contact</li>
-        </a>
-        <a class="nav-link last-list-child" href="#team">
+        <a class="nav-link" href="#team">
           <li>Team</li>
         </a>
+        <a class="nav-link last-list-child" href="#contact">
+          <li>Contact</li>
+        </a>
+        
         <i class="fa fa-instagram menu-icons" id="menu-icon" aria-hidden="true"></i>
         <i class="fa fa-twitter menu-icons" id="menu-icon1" aria-hidden="true"></i>
       </ul>
@@ -286,7 +288,7 @@
     <a href="gallery.html" class="view-more-btn">View More >>> </a>
   </section>
 
-  <section class="ourTeam">
+  <section class="ourTeam" id="team">
     <h1 id="teamHead">Meet Our Team</h1>
     <div id="team-container">
       <div id="member">
@@ -370,7 +372,7 @@
     </div>
   </section>
 
-  <section class="achievements">
+  <!-- <section class="achievements">
     <h2>achievements</h2>
     <div class="achievements-slide">
       <p id="achievement-one">
@@ -385,7 +387,35 @@
         And motivational speakers from different multinational firms came to talk and inspire the trained students.
       </p>
     </div>
-  </section>
+  </section> -->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <h2 class="ach-header">achievements</h2>
+    <div class="mySlides">
+      <p>We've been able to train about 200 Students on both Technical and Soft Skills.</p>
+    </div>
+  
+    <div class="mySlides">
+      <p>These Students were able to display these skills to multinational firms on the event's day.
+      The Facilitators were students of the University of Lagos that have been privileged to intern in Big Firms like Goldmans
+      Sachs in UK, and those were able to empower themselves via online courses.</p>
+    </div>
+  
+    <div class="mySlides">
+      <p>It's an achievement to have been able to sell the ideas to Google, Luno, UAC and so more.
+      And motivational speakers from different multinational firms came to talk and inspire the trained students.</p>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
 
   <section class="contact" id="contact">
     <div class="contacts-div">
