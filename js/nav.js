@@ -20,11 +20,13 @@ const nav = document.querySelector(".nav");
 const menuspan = document.querySelector(".menu-span");
 const menuspan2 = document.querySelector(".menu-span2");
 const menuspan3 = document.querySelector(".menu-span3");
+const overlay = document.querySelector('div.overlay');
 
 
 const show = function () {
     nav.classList.toggle("sample");
     menu.querySelector(".span2").classList.toggle("spanTrans")
+    overlay.classList.toggle('show-overlay')
     navC.classList.toggle("nav-stable")
     menuspan.classList.toggle("menu-span-black")
     menuspan2.classList.toggle("menu-span-black")

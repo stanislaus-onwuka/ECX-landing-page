@@ -8,7 +8,19 @@ body {
   box-sizing: border-box;
   font-family: 'Segoe Ui', sans-serif;
 }
-
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  visibility: hidden;;
+}
+.show-overlay{
+  visibility: visible;
+}
 *,
 html {
   margin: 0px;
