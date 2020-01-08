@@ -380,6 +380,10 @@ section#about {
   max-width: 600px;
 }
 
+.cadsar h1{
+  text-align: center;
+}
+
 .visionBoard-list>li {
   list-style-type: none;
 
@@ -463,8 +467,9 @@ section#about {
 
 #wwd {
   background-image: url('../images/wwd.jpg');
+  background-color: rgb(255, 255, 255);
   background-position: center;
-  padding: 50px;
+  padding: 3rem;
   background-repeat: none;
   background-size: cover;
 }
@@ -511,15 +516,12 @@ section#about {
 
 .pictures {
   display: grid;
-  margin: 5rem;
+  margin: 3rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25% 25% 25% 25%;
   justify-items: stretch;
-  <<<<<<< HEAD align-items: inherit;
-  grid-gap: 50px;
-  =======align-items: stretch;
-  grid-gap: 8px;
-  >>>>>>>4dbffa7de376ba80738204948616a443140503bd
+  align-items: stretch;
+  grid-gap: 9px;
 }
 
 .picture {
@@ -547,15 +549,16 @@ section#about {
   cursor: pointer;
   border-radius: 3px;
   color: #fff;
-  width: fit-content;
-  background: #3cb1fd 0% 0% no-repeat padding-box;
-  /* border: 0.5px solid white; */
-  box-shadow: 0 3px 6px #00000029;
+  width: 55%;
+  background: #3cb1fd;
+  box-shadow: 0 0 6px #00000029;
 }
 
 .view-more-btn:hover {
-  background-color: rgb(5, 5, 90);
+  background-color: rgb(13, 13, 145);
+  transform: scale(1.037);
 }
+
 
 /* Team */
 .ourTeam {
