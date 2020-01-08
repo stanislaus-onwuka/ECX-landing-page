@@ -190,7 +190,7 @@ ul.nav-list {
 }
 
 .last-list-child>li {
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 
@@ -609,6 +609,30 @@ section#about {
 }
 
 /* achievement slideshow */
+.mySlides1{
+  display: none;
+  width: 68%;
+  margin: auto;
+}
+
+.w3-animate-fading {
+  animation: fading 10s infinite
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
 .ach-header {
   text-align: center;
   text-transform: uppercase;
