@@ -190,7 +190,7 @@ ul.nav-list {
 }
 
 .last-list-child>li {
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 
@@ -609,6 +609,11 @@ section#about {
 }
 
 /* achievement slideshow */
+.mySlides1{
+  display: none;
+  width: 75%;
+  margin: auto;
+}
 .ach-header {
   text-align: center;
   text-transform: uppercase;
