@@ -51,7 +51,7 @@ z-index: 2;
   animation: fade 1s forwards;
 }
 
-.overlay{
+.main-overlay{
   position: fixed;
   z-index: 5;
   width: 100%;
