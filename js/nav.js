@@ -22,7 +22,6 @@ const menuspan2 = document.querySelector(".menu-span2");
 const menuspan3 = document.querySelector(".menu-span3");
 const overlay = document.querySelector('div.overlay');
 
-
 const show = function () {
     nav.classList.toggle("sample");
     menu.querySelector(".span2").classList.toggle("spanTrans")
@@ -31,6 +30,14 @@ const show = function () {
     menuspan.classList.toggle("menu-span-black")
     menuspan2.classList.toggle("menu-span-black")
     menuspan3.classList.toggle("menu-span-black")
+    closeNav(nav.classList)
 }
+menu.addEventListener("click", show);
 
-menu.addEventListener("click", show)
+const closeNav = classList => {
+ if (true) {
+  overlay.addEventListener("click",()=>{
+        show()
+   })
+ }
+}
