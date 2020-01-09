@@ -1,5 +1,6 @@
 const galleryContainer = document.querySelector('.pictures');
-const overlay = document.querySelector('.img-overlay');
+const imgOverlay = document.querySelector('.img-overlay');
+const overlayImg = document.createElement('img');
 const closeBtn = document.querySelector('.close-btn');
 const imgArr = [
                 'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493536/ECX%20gallery/Main%20Gallery/Totel_Photography-7371_brqbn4.png',
@@ -220,11 +221,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 galleryContainer.addEventListener('click',(e)=>{
     if(e.target.src){
-        const overlayImg = document.createElement('img');
         overlayImg.className = 'current-img';
         overlayImg.src = e.target.src;
-        overlay.appendChild(overlayImg);
-        overlay.style.display = 'block';
+        imgOverlay.appendChild(overlayImg);
+        imgOverlay.style.display = 'block';
     };  
 })
 
@@ -232,4 +232,5 @@ galleryContainer.addEventListener('click',(e)=>{
 
 const closeOverlay = () =>{
     closeBtn.parentElement.style.display = 'none';
+    overlayImg.className = '';
 }
