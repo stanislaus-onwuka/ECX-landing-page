@@ -51,7 +51,7 @@ z-index: 2;
   animation: fade 1s forwards;
 }
 
-.overlay{
+.main-overlay{
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -74,7 +74,7 @@ z-index: 2;
   cursor: pointer;
   position: fixed;
   font-size: 2rem;
-  color: rgb(175, 175, 175);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   z-index: 6;
   top: 3%;

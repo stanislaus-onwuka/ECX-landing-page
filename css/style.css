@@ -26,6 +26,7 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,6 +67,7 @@ section {
 
 .nav-up {
   top: -10px;
+  box-shadow: 2px 0 6px #232323;
 }
 
 .nav-stable {
@@ -241,11 +243,12 @@ ul.nav-list {
 
 
 
+
 /* HERO SECTION */
 
 #hero {
   background-color: white;
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/hero.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -478,12 +481,14 @@ section#about {
 }
 
 #wwd {
-  background-image: url('../images/wwd.jpg');
-  background-color: rgba(51, 86, 107, 0.144);
+  background: url('../images/wwd.svg');
+  background-color: rgba(255, 255, 255, 0.144);
   background-position: center;
   padding: 3rem;
+  background-size:  cover;
   background-repeat: none;
-  background-size: cover;
+  
+  
 }
 
 .wwd-content {
@@ -793,126 +798,6 @@ q {
 }
 
 
-.achievements {
-  padding: 1rem;
-  animation: ease-out;
-  color: #fff;
-
-}
-
-.achievements h2 {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0.2rem;
-  padding: 0.7rem;
-}
-
-.achievements-slide {
-  width: 100%;
-}
-
-#achievement-one,
-#achievement-two,
-#achievement-three {
-  display: block;
-  top: 2rem;
-  width: 100%;
-  font-size: 1.2rem;
-  text-align: center;
-  margin: auto;
-  padding: 0.3rem;
-  animation-duration: 20s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-
-#achievement-one {
-  animation: animate-1 15s infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-}
-
-#achievement-two {
-  animation: animate-2 15s infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-}
-
-#achievement-three {
-  animation: animate-3 15s infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-}
-
-@keyframes animate-1 {
-
-  0%,
-  8.3% {
-    opacity: 0;
-  }
-
-  8.3%,
-  25% {
-    opacity: 1;
-  }
-
-  33.33%,
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes animate-2 {
-
-  0%,
-  33.33% {
-    opacity: 0;
-  }
-
-  41.63%,
-  58.29% {
-    opacity: 1;
-  }
-
-  66.66%,
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes animate-3 {
-
-  0%,
-  66.66% {
-    opacity: 0;
-  }
-
-  74.96%,
-  91.62% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
 /* Contacts */
 .contact {
   display: flex;
@@ -1040,6 +925,51 @@ footer p {
   font-size: 12px;
 }
 
+.panel {
+  z-index:0; 
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+a[ id= "hero" ]:target ~ main section.panel {
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
+}
+
+a[ id= "about" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -142.85px  );
+  transform: translateY( -142.85px );
+}
+a[ id= "ourPhil" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -285.71px );
+  transform: translateY( -285.71px );
+}
+a[ id= "ourPhil" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -428.57px );
+  transform: translateY( -428.57px );
+}
+a[ id= "wwd" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -571.43px );
+  transform: translateY( -571.43px );
+}
+a[ id= "gallery" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -714.29px );
+  transform: translateY( -714.29px );
+}
+a[ id= "team" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -857.14px );
+  transform: translateY( -857.14px );
+}
+a[ id= "contact" ]:target ~ main section.panel {
+  -webkit-transform: translateY( -1000px );
+  transform: translateY( -1000px );
+}
+
+
 
 
 /* Animations */
@@ -1141,6 +1071,16 @@ footer p {
 
 }
 
+@media (min-width:35rem){
+  #wwd {
+    background-image: url('../images/wwd.jpg');
+  }
+
+  #hero {
+    background-image: url('../images/hero.jpg');
+  }
+}
+
 @media only screen and (max-width: 600px) {
 
   .card,
@@ -1152,13 +1092,6 @@ footer p {
     margin-right: 0px;
   }
 
-  #wwd {
-    background-image: none;
-  }
-
-  #hero {
-    background-image: none;
-  }
 
 
 }
