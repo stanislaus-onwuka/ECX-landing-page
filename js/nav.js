@@ -30,11 +30,11 @@ const show = function () {
     menuspan.classList.toggle("menu-span-black")
     menuspan2.classList.toggle("menu-span-black")
     menuspan3.classList.toggle("menu-span-black")
-    closeNav(nav.classList)
+    closeNav()
 }
 menu.addEventListener("click", show);
 
-const closeNav = classList => {
+const closeNav = () =>  {
  if (true) {
   overlay.addEventListener("click",()=>{
         show()
