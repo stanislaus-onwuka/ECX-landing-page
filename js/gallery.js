@@ -1,5 +1,6 @@
 const galleryContainer = document.querySelector('.pictures');
 const overlay = document.querySelector('.img-overlay');
+const closeBtn = document.querySelector('.close-btn');
 const imgArr = [
                 'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493536/ECX%20gallery/Main%20Gallery/Totel_Photography-7371_brqbn4.png',
                 'https://res.cloudinary.com/ecx/image/upload/f_auto/v1578493485/ECX%20gallery/Main%20Gallery/Totel_Photography-7362_d26zxo.png',
@@ -224,10 +225,11 @@ galleryContainer.addEventListener('click',(e)=>{
         overlayImg.src = e.target.src;
         overlay.appendChild(overlayImg);
         overlay.style.display = 'block';
-    };
-    
+    };  
 })
 
+// closeBtn.addEventListener('click', closeOverlay);
+
 const closeOverlay = () =>{
-    document.querySelector('.img-overlay').style.display = 'none';
+    closeBtn.parentElement.style.display = 'none';
 }
