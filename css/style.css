@@ -450,6 +450,7 @@ section#about {
 
 .content-container>img {
   margin-right: 15px;
+  width: 500px;
 }
 
 
@@ -1075,6 +1076,7 @@ a[ id= "contact" ]:target ~ main section.panel {
 
   #hero {
     background-image: url('../images/hero.jpg');
+    background-size: cover;
   }
 }
 
