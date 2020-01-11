@@ -583,28 +583,28 @@ section#about {
   padding-top: 30px;
   background-color: rgb(231, 231, 235);
   width: 100%;
+  height: auto;
 }
 
 #teamHead {
   text-align-last: center;
   font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
 }
 
 #team-container {
   width: 100%;
   margin: auto;
+  padding:0.5rem 0 2rem 0;
   text-align: center;
   padding-bottom: 30px;
 }
 
 #member {
-  margin: 15px;
-  width: 20vw;
-  height: 20vh;
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
   display: inline-block;
+  padding:2.8rem 0;
   border-radius: 20%;
   vertical-align: middle;
   color: rgb(57, 47, 155);
@@ -612,16 +612,15 @@ section#about {
 
 #member p {
   color: rgb(192, 21, 21);
-  overflow-wrap: break-word;
 }
 
 #member img {
   border-radius: 100%;
   text-align: center;
-  margin-top: 5vh;
-  height: fit-content;
-  width: fit-content;
-
+  margin:1rem;
+  padding-top: 1rem;
+  height: 90%;
+  width: 70%;
 }
 
 /* achievement slideshow */
