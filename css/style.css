@@ -606,8 +606,7 @@ section#about {
   height: 20vh;
   display: inline-block;
   border-radius: 20%;
-  ;
-
+  vertical-align: middle;
   color: rgb(57, 47, 155);
 }
 
