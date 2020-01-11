@@ -581,16 +581,16 @@ section#about {
   margin: auto;
   text-align: center;
   padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,160px);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-content: center;
 }
 
 #member {
-  margin: 15px;
-  width: 20vw;
-  height: 20vh;
   display: inline-block;
   border-radius: 20%;
-  ;
-
   color: rgb(57, 47, 155);
 }
 
