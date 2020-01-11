@@ -247,9 +247,9 @@ ul.nav-list {
 #hero {
   background-color: rgba(240, 240, 240, 0.829);
   background-image: url('../images/ECX-Logo-02.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 
 }
 
@@ -448,6 +448,7 @@ section#about {
 
 .content-container>img {
   margin-right: 15px;
+      max-width: 100%;
 }
 
 
@@ -593,16 +594,16 @@ section#about {
   padding:0.5rem 0 2rem 0;
   text-align: center;
   padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,160px);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-content: center;
 }
 
 #member {
-  margin: 1rem;
-  width: 250px;
-  height: 250px;
   display: inline-block;
-  padding:2.8rem 0;
   border-radius: 20%;
-  vertical-align: middle;
   color: rgb(57, 47, 155);
 }
 
@@ -615,7 +616,6 @@ section#about {
   text-align: center;
   margin:1rem;
   padding-top: 1rem;
-  height: 90%;
   width: 70%;
 }
 
@@ -1068,6 +1068,7 @@ a[ id= "contact" ]:target ~ main section.panel {
 
   #hero {
     background-image: url('../images/hero.jpg');
+    background-size: cover;
   }
 }
 
