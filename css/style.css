@@ -249,7 +249,7 @@ ul.nav-list {
 #hero {
   background-color: rgba(240, 240, 240, 0.829);
   background-image: url('../images/ECX-Logo-02.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
