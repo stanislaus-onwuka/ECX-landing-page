@@ -247,9 +247,9 @@ ul.nav-list {
 /* HERO SECTION */
 
 #hero {
-  background-color: white;
-  background-image: url('../images/hero.svg');
-  background-repeat: no-repeat;
+  background-color: rgba(240, 240, 240, 0.829);
+  background-image: url('../images/ECX-Logo-02.png');
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
 
