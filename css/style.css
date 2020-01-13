@@ -242,8 +242,6 @@ ul.nav-list {
 }
 
 
-
-
 /* HERO SECTION */
 
 #hero {
@@ -487,9 +485,7 @@ section#about {
   background-position: center;
   padding: 3rem;
   background-size:  cover;
-  background-repeat: none;
-  
-  
+  background-repeat: none; 
 }
 
 .wwd-content {
@@ -712,14 +708,11 @@ button {
   position: relative;
 }
 
- 
-
 
 .ach-header {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Poppins',
-    sans-serif !important;
+  font-family: 'Baskervville', serif;
 }
 
 .slideshow-container {
@@ -729,7 +722,6 @@ button {
   padding-top: 10px;
 
 }
-
 
 .mySlides {
   display: none;
