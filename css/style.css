@@ -467,6 +467,11 @@ section#about {
 }
 
 /* What we do */
+.Bullet{
+      font-size: 30px;
+      padding-right: 10px;
+}
+
 .ecx-logo {
   width: 150px;
   position: absolute;
